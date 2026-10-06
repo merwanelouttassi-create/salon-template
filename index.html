@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atelier Élégance | Salon de Beauté &amp; Spa Privé</title>
-  <meta name="description" content="Atelier Élégance — L'art de sublimer votre beauté naturelle, en toute intimité à Casablanca. Balayage signature, soins visage, onglerie russe et make-up événementiel.">
-  <meta property="og:title" content="Atelier Élégance | Salon de Beauté &amp; Spa Privé">
-  <meta property="og:description" content="L'art de sublimer votre beauté naturelle, en toute intimité à Casablanca.">
+  <title>{{SALON_NAME}} | Salon de Beauté &amp; Spa Privé</title>
+  <meta name="description" content="{{SALON_NAME}} — L'art de sublimer votre beauté naturelle, en toute intimité à {{CITY}}. Balayage signature, soins visage, onglerie russe et make-up événementiel.">
+  <meta property="og:title" content="{{SALON_NAME}} | Salon de Beauté &amp; Spa Privé">
+  <meta property="og:description" content="L'art de sublimer votre beauté naturelle, en toute intimité à {{CITY}}.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80">
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
@@ -97,7 +97,7 @@
     <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
       <!-- Logo -->
       <a href="#" class="font-serif text-xl md:text-2xl tracking-[0.2em] font-medium text-gray-900 shrink-0">
-        ATELIER ÉLÉGANCE
+        {{SALON_NAME}}
       </a>
 
       <!-- Liens desktop -->
@@ -176,7 +176,7 @@
     <!-- Contenu -->
     <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-10 py-32 lg:py-40">
       <h1 class="reveal font-serif text-4xl sm:text-5xl md:text-6xl text-white font-medium tracking-tight leading-[1.15] mb-6 max-w-3xl mx-auto">
-        <span data-i18n="hero_title_prefix">L'art de révéler votre beauté naturelle à </span><span class="italic text-[#EC4899]" data-i18n="hero_title_loc">Casablanca.</span>
+        <span data-i18n="hero_title_prefix">L'art de révéler votre beauté naturelle à </span><span class="italic text-[#EC4899]" data-i18n="hero_title_loc">{{CITY}}.</span>
       </h1>
 
       <p class="reveal text-base sm:text-lg text-white/80 font-light max-w-xl mx-auto mb-8 leading-relaxed" data-i18n="hero_subtitle">
@@ -408,7 +408,7 @@
         <!-- Carte Google Maps — cadre arrondi lisse -->
         <div class="reveal rounded-[28px] overflow-hidden shadow-sm border border-[#F3EAE3]">
           <div class="w-full h-80 relative">
-            <iframe title="Localisation de ATELIER ÉLÉGANCE — 9604 Wilshire Blvd, Beverly Hills, CA 90212"
+            <iframe title="Localisation de {{SALON_NAME}} — {{ADDRESS}}"
                     src="https://maps.google.com/maps?q={{MAP_QUERY}}&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     width="100%" height="100%" style="border:0;"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -422,7 +422,7 @@
               <span class="w-12 h-12 rounded-2xl bg-[#FDF2F8] text-[#EC4899] border border-[#FBCFE8] shadow-sm flex items-center justify-center"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
               <div>
                 <h4 class="font-serif text-lg text-[#1C1917] font-medium tracking-tight mb-1">Adresse</h4>
-                <p class="text-sm text-[#736B63] font-light leading-relaxed">9604 Wilshire Blvd, Beverly Hills, CA 90212</p>
+                <p class="text-sm text-[#736B63] font-light leading-relaxed">{{ADDRESS}}</p>
               </div>
             </div>
 
@@ -467,15 +467,15 @@
     <!-- Luxury Brand Watermark Layer -->
     <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden z-0" aria-hidden="true">
       <span class="text-[7.5vw] font-serif font-semibold uppercase tracking-[0.2em] whitespace-nowrap text-transparent [-webkit-text-stroke:1px_rgba(236,72,153,0.18)] opacity-25 transform -translate-y-4">
-        ATELIER ÉLÉGANCE
+        {{SALON_NAME}}
       </span>
     </div>
 
     <div class="relative z-10 max-w-6xl mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <h3 class="font-serif text-2xl tracking-wide text-white mb-4">ATELIER ÉLÉGANCE</h3>
-          <p class="text-[#A19D98] text-sm leading-relaxed max-w-xs">L'art de sublimer votre beauté naturelle, en toute intimité à Casablanca.</p>
+          <h3 class="font-serif text-2xl tracking-wide text-white mb-4">{{SALON_NAME}}</h3>
+          <p class="text-[#A19D98] text-sm leading-relaxed max-w-xs">L'art de sublimer votre beauté naturelle, en toute intimité à {{CITY}}.</p>
         </div>
         <div>
           <h4 class="text-xs uppercase tracking-[0.2em] text-[#F472B6] font-medium mb-5">Navigation</h4>
@@ -490,7 +490,7 @@
         <div>
           <h4 class="text-xs uppercase tracking-[0.2em] text-[#F472B6] font-medium mb-5">Contact</h4>
           <ul class="space-y-3 text-sm text-[#D4CFC9]">
-            <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-[#F472B6] mt-0.5" aria-hidden="true"></i> <span>9604 Wilshire Blvd, Beverly Hills, CA 90212</span></li>
+            <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-[#F472B6] mt-0.5" aria-hidden="true"></i> <span>{{ADDRESS}}</span></li>
             <li class="flex items-start gap-3"><i class="fa-solid fa-phone text-[#F472B6] mt-0.5" aria-hidden="true"></i> <a href="tel:{{PHONE_CLEAN}}" class="hover:text-[#F472B6] transition-colors">{{PHONE}}</a></li>
             <li class="flex items-start gap-3"><i class="fa-brands fa-whatsapp text-[#F472B6] mt-0.5" aria-hidden="true"></i> <a href="https://wa.me/{{WHATSAPP_NUMBER}}" target="_blank" rel="noopener" class="hover:text-[#F472B6] transition-colors">WhatsApp</a></li>
           </ul>
@@ -498,8 +498,8 @@
       </div>
     </div>
     <div class="border-t border-white/[0.08] mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#87827C] relative z-10 max-w-6xl mx-auto px-6">
-      <span>© <span id="year"></span> ATELIER ÉLÉGANCE — Tous droits réservés</span>
-      <span class="mt-2 sm:mt-0">Haute Beauté · Casablanca</span>
+      <span>© <span id="year"></span> {{SALON_NAME}} — Tous droits réservés</span>
+      <span class="mt-2 sm:mt-0">Haute Beauté · {{CITY}}</span>
     </div>
   </footer>
 
@@ -616,7 +616,7 @@
         nav_contact: "CONTACT",
         cta_book: "PRENDRE RENDEZ-VOUS",
         hero_title_prefix: "L'art de révéler votre beauté naturelle à ",
-        hero_title_loc: "Casablanca.",
+        hero_title_loc: "{{CITY}}.",
         hero_subtitle: "Une expérience de soins sur-mesure dans un cadre intimiste pensé pour sublimer chacun de vos détails.",
         hero_call: "Appeler : {{PHONE}}",
         badge_custom: "Soins Sur-Mesure",
@@ -635,7 +635,7 @@
         nav_contact: "CONTACT",
         cta_book: "BOOK APPOINTMENT",
         hero_title_prefix: "The art of revealing your natural beauty in ",
-        hero_title_loc: "Casablanca.",
+        hero_title_loc: "{{CITY}}.",
         hero_subtitle: "A tailored care experience in an intimate sanctuary designed to enhance your every detail.",
         hero_call: "Call : {{PHONE}}",
         badge_custom: "Tailored Care",
